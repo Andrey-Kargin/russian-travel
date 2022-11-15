@@ -1,24 +1,22 @@
 .photo-grid {
-  max-width:max-content;
+  max-width: calc(100% - 2*48px);
   display: grid;
-  grid-template-columns: repeat(4, 284px);
-  grid-template-rows: repeat(3, 213px);
+  grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
   gap: 16px;
   margin: 0 auto 12px auto;
 }
 
 @media screen and (max-width: 1279px) {
   .photo-grid {
-    grid-template-columns: repeat(3, 300px);
-    grid-template-rows: repeat(4, 225px);
+    grid-template-columns: repeat(auto-fit, minmax(28vw, 1fr));
     gap: 14px;
   }
 }
 
 @media screen and (max-width: 1023px) {
   .photo-grid {
-    grid-template-columns: repeat(2, 352px);
-    grid-template-rows: repeat(6, 264px);
+    max-width: calc(100% - 2*24px);
+    grid-template-columns: repeat(auto-fit, minmax(44vw, 1fr));
     gap: 16px;
     margin-bottom: 16px;
   }
@@ -26,8 +24,8 @@
 
 @media screen and (max-width: 767px) {
   .photo-grid {
-    grid-template-columns: 288px;
-    grid-template-rows: repeat(12, 216px);
+    max-width: calc(100% - 2*16px);
+    grid-template-columns: 1fr;
     gap: 12px;
     margin-bottom: 14px;
   }

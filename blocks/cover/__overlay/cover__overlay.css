@@ -6,8 +6,8 @@
   justify-content: center;
   background-size: cover;
   object-fit: cover;
-  position: relative;
   text-decoration: none;
+  transition: background-color 0.5s ease;
 }
 
 .cover__overlay:hover {

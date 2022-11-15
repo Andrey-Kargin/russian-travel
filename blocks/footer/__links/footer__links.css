@@ -7,10 +7,9 @@
 
 @media screen and (max-width: 767px) {
   .footer__links {
-    height: 100%;
     width: 100%;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 32px;
     margin-bottom: 48px;
   }
 }
