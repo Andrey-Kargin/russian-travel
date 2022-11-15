@@ -1,4 +1,4 @@
-.header__lang-link {
+.header__links {
   margin: 0;
   width: 74px;
   display: flex;
@@ -9,7 +9,7 @@
 }
 
 @media screen and (max-width: 767px) {
-  .header__lang-link {
+  .header__links {
     width: 62px;
   }
 }
